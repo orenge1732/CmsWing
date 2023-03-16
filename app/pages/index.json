@@ -29,38 +29,8 @@
               ]
             }
           ]
-        },
-        {
-          "type": "panel",
-          "title": "CmsWing 开发团队",
-          "name": "chart-local",
-          "body": [
-            {
-              "type": "crud",
-              "api": "/admin/sys/team",
-              "affixHeader": false,
-              "combineNum": 1,
-              "columns": [
-                {
-                  "name": "name",
-                  "label": "",
-                  "isHead": true
-                },
-                {
-                  "name": "value",
-                  "type":"tpl",
-                  "label": ""
-                }
-              ]
-            }
-          ]
         }
       ]
-    },
-    {
-      "type": "iframe",
-      "height":"450px",
-      "src": "/admin/sys/gitee"
     }
   ],
   "id": "u:0fdc9e106470",

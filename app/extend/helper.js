@@ -6,7 +6,7 @@ const crypto = require('crypto');
 // eslint-disable-next-line node/prefer-global/buffer
 const { Buffer } = require('buffer');
 const jwt = require('jsonwebtoken');
-const password = 'www.cmswing.com';
+const password = 'myadminPassword';
 const key = crypto.scryptSync(password, 'salt', 24);
 const iv = Buffer.alloc(16, 0);
 const algorithm = 'aes-192-cbc';

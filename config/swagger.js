@@ -2,8 +2,8 @@
 module.exports = {
   dirScanner: './app/controller',
   apiInfo: {
-    title: 'cmswing',
-    description: 'cmswing',
+    title: 'admin',
+    description: 'admin',
     version: '1.0.0',
   },
   schemes: [ 'http', 'https' ],

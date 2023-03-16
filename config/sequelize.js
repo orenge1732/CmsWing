@@ -6,9 +6,9 @@ module.exports = {
       dialect: 'mysql',
       host: '127.0.0.1',
       port: 3306,
-      database: 'cmswing2',
+      database: 'myCms',
       username: 'root',
-      password: 'root123456',
+      password: 'root',
       timezone: '+08:00',
       define: {
         freezeTableName: true, // 强制表名称等于模型名称

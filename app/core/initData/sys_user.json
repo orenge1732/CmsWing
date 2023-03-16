@@ -1,19 +1,28 @@
 {
   "RECORDS": [
     {
-      "username": "admin",
-      "password": "173894bacc4b950248a50341325439ca",
-      "email": "arterli@qq.com",
-      "mobile": "18681851637",
+      "username": "kevin",
+      "password": "fe0ee5b36ebab5941325f411ed18ee47",
+      "email": "kevin@qq.com",
+      "mobile": "12345678901",
       "state": 1,
       "admin": 1,
       "group_uuid": "9decbce5-3006-482b-9c0a-c85aa534c766",
       "uuid": "32316132-086b-44cc-baa9-419618531dff"
     },
     {
+      "username": "admin",
+      "password": "fe0ee5b36ebab5941325f411ed18ee47",
+      "email": "admin@qq.com",
+      "mobile": "12345678901",
+      "state": 1,
+      "admin": 1,
+      "uuid": "4dea8462-eafd-415e-a0d1-88ac5908d674"
+    },
+    {
       "username": "ceshi",
-      "password": "173894bacc4b950248a50341325439ca",
-      "email": "cmswing@cmswing.com",
+      "password": "fe0ee5b36ebab5941325f411ed18ee47",
+      "email": "ceshi@ceshi.com",
       "mobile": "12345678901",
       "state": 1,
       "admin": 0,

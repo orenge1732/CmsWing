@@ -170,15 +170,6 @@ class IndexController extends Controller {
     const tree = this.ctx.helper.arr_to_tree(arr, '0', 'uuid', 'puuid');
     this.success({ pages: tree });
   }
-  async team() {
-    const items = [];
-    items.push({ name: '总策划&主开发', value: '<a href=\'https://www.cmswing.com\' target=\'_blank\'>阿特</a>' });
-    items.push({ name: '研发团队', value: '<a href=\'https://www.cmswing.com\' target=\'_blank\'>阿特</a>' });
-    items.push({ name: '开源贡献者', value: '-' });
-    items.push({ name: '开源协议', value: '<a href=\'https://gitee.com/cmswing/CmsWing/blob/master/LICENSE\' target=\'_blank\'> MulanPSL-2.0</a>' });
-    items.push({ name: '相关链接', value: '<a href=\'https://www.cmswing.com\' target=\'_blank\'>CmsWing官网</a>，<a href=\'https://www.eggjs.org/zh-CN\' target=\'_blank\'>EggJS官网</a>' });
-    this.success({ items });
-  }
   async sysInfo() {
     const items = [];
     const packagePath = path.join(this.app.baseDir, 'package.json');
@@ -191,31 +182,6 @@ class IndexController extends Controller {
     // console.log(packageInfo);
     console.log((await this.ctx.model.query('select version()')));
     this.success({ items });
-  }
-  async gitee() {
-    this.ctx.body = `<script src='https://gitee.com/cmswing/CmsWing/widget_preview' async defer></script>
-    <div id="osc-gitee-widget-tag"></div>
-    <script>
-    window.onload=function(){
-    var aList = document.getElementsByTagName('a');//获取所有的标签a
-    for(var i=0;i<aList.length;i++){
-      aList[i].target='_blank';//定义成打开新窗口
-      }
-   }
-    </script>
-    <style>
-    body {
-      display: block;
-      margin: 0px;
-      padding:0;
-    }
-    .osc_pro_color {color: #4183c4 !important;}
-    .osc_panel_color {background-color: #ffffff !important;}
-    .osc_background_color {background-color: #ffffff !important;}
-    .osc_border_color {border-color: #e3e9ed !important;}
-    .osc_desc_color {color: #666666 !important;}
-    .osc_link_color * {color: #9b9b9b !important;}
-    </style>`;
   }
   async ceshi() {
     this.ctx.body = this.config.objectStorage;
